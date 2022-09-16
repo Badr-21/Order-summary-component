@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    /*## Colors
+    ### Primary*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /*### Neutral*/
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 20rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.container img {
+    width: 20rem;
+    height: auto;
+    display: block;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container .text {
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem 2rem;
+}
+
+.container .text h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: -.8rem;
+}
+
+.container .text > p {
+    width: 15rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.container .text .plan {
+    width: 16rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.container .plan img {
+    width: 2rem;
+    height: auto;
+    margin-left: -1rem;
+}
+
+.container .text .plan p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: -1rem;
+}
+
+.container .text .plan p span {
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--Desaturated-blue);
+}
+
+.container .text .plan a {
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: -1.5rem;
+    color: var(--Bright-blue);
+}
+
+.container .text .plan a:hover {
+    opacity: .5;
+    text-decoration: none;
+}
+
+.container .text button {
+    width: 16rem;
+    border: none;
+    padding: .8rem;
+    margin-top: 1.5rem;
+    font-size: 11px;
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: .5rem;
+    box-shadow: 0rem .1rem 1rem 0rem var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.container .text button:hover {
+    opacity: .5;
+}
+
+.container .text > p {
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.container .text > p:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
